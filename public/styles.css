@@ -1,0 +1,281 @@
+/* Colores */
+
+:root {
+  --color-primary: #FC972F;
+  --color-secondary: #1C83DD;
+  --color-white: #FFFFFF;
+  --color-red: #e74c3c;
+  --color-yellow: #f1c40f;
+  --color-gray: #34495e;
+}
+
+/* Fuentes */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(230,170,109);
+  background: linear-gradient(0deg, rgba(230,170,109,1) 0%, rgba(100,171,232,1) 100%);
+}
+
+/* Tamaños de fuente */
+
+h1, .text-2xl {
+  font-size: 2.5rem;
+  /* Tamaño para títulos principales */
+}
+
+h2, .text-xl {
+  font-size: 1.875rem;
+  /* Tamaño para subtítulos */
+}
+
+h3, .text-lg {
+  font-size: 1.5rem;
+  /* Tamaño para encabezados */
+}
+
+.card-body h5{
+  font-size: 1.2rem;
+  color: var(--color-gray);
+}
+
+.btn  .btn-primary{
+  color: var(--color-primary);
+}
+
+p, .text-base {
+  font-size: 1rem;
+  /* Tamaño para texto del cuerpo */
+}
+
+small, .text-sm {
+  font-size: 0.875rem;
+  /* Tamaño para texto pequeño */
+}
+
+/* Reset y configuración básica */
+
+body {
+  margin: 0;
+  background-color: var(--color-white);
+}
+
+header {
+  background: linear-gradient(0deg, rgb(100, 171, 232, 1) 0%, rgba(41, 58, 156, 0.681) 100%);
+  color: var(--color-white);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-shadow: #0056b3;
+}
+
+header img {
+  max-width: 120px;
+  height: auto;
+  margin-right: 10px;
+}
+
+header h1, header p {
+  margin: 0;
+}
+
+/* Dropdown */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-white);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--color-gray);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Otros estilos */
+
+footer {
+  background: var(--color-gray);
+  color: var(--color-white);
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--color-white);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+section h2, section h3, section h4 {
+  margin-bottom: 10px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: calc(30% - 20px);
+  /* Ajusta según la cantidad de productos por fila */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--color-white);
+}
+
+.product .card-img-top {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.categorias-lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categorias-lista li {
+  margin-bottom: 5px;
+}
+
+.categorias-lista a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.categorias-lista a:hover {
+  text-decoration: underline;
+  color: var(--color-secondary);
+}
+
+/* Estilos para el formulario de inicio de sesión */
+
+.form-container {
+  background-color: var(--color-white);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+.form-container .form-control {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-container .form-control:focus {
+  border-color: var(--color-primary);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(252, 151, 47, 0.25);
+}
+
+.form-container .btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container .btn-primary:hover {
+  background-color: var(--color-secondary);
+}
+
+.form-container .btn-link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.form-container .btn-link:hover {
+  text-decoration: underline;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .invalid-feedback {
+  position: absolute;
+  bottom: -1.5em;
+  left: 0;
+  width: 100%;
+  font-size: 0.8em;
+  color: red;
+}
+
+/* Ajustes para el contenedor del carrusel */
+
+.carousel
+.carousel-inner {
+  height: auto;
+  /* Ajusta la altura para que se adapte a las tarjetas */
+}
+
+/* Ajustes para que el carrusel se vea bien con tarjetas */
+
+.carousel-item {
+  padding: 20px;
+}
+
+.visually-hidden{
+  background-color: black;
+}

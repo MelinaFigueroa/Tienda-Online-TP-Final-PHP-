@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
+    header('Location: ../auth/login.php');
     exit;
 }
 require '../includes/config.php';
@@ -16,11 +16,12 @@ $products = $stmt->fetchAll();
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administración - PinguiShop</title>
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
-<body>
+<body class="bg-light font-Poppins">
     <?php include '../includes/header.php'; ?>
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-2xl font-bold text-gray-800 mb-4">Panel de Administración</h1>
@@ -33,6 +34,7 @@ $products = $stmt->fetchAll();
                     <th class="text-left py-3 px-4 font-semibold">Nombre</th>
                     <th class="text-left py-3 px-4 font-semibold">Descripción</th>
                     <th class="text-left py-3 px-4 font-semibold">Precio</th>
+                    <th class="text-left py-3 px-4 font-semibold">Imagen</th>
                     <th class="text-left py-3 px-4 font-semibold">Acciones</th>
                 </tr>
             </thead>
@@ -42,6 +44,9 @@ $products = $stmt->fetchAll();
                         <td class="text-left py-3 px-4"><?php echo htmlspecialchars($product['name']); ?></td>
                         <td class="text-left py-3 px-4"><?php echo htmlspecialchars($product['description']); ?></td>
                         <td class="text-left py-3 px-4">$<?php echo htmlspecialchars($product['price']); ?></td>
+                        <td class="text-left py-3 px-4">
+                            <img src="<?php echo htmlspecialchars($product['image_url']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>" class="w-32 h-32 object-cover rounded">
+                        </td>
                         <td class="text-left py-3 px-4">
                             <a href="edit.php?id=<?php echo htmlspecialchars($product['id']); ?>" class="text-blue-600 hover:text-blue-900 mr-2">Editar</a>
                             <a href="delete.php?id=<?php echo htmlspecialchars($product['id']); ?>" class="text-red-600 hover:text-red-900">Eliminar</a>

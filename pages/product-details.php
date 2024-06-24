@@ -1,13 +1,13 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: pages/login.php');
+    header('Location: ../auth/login.php');
     exit;
 }
 require '../includes/config.php';
 
 if (!isset($_GET['product_id'])) {
-    header('Location: pages/index.php');
+    header('Location: pages/home.php');
     exit;
 }
 
@@ -28,12 +28,12 @@ if (!$product) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo htmlspecialchars($product['name']); ?> - Detalles del Producto</title>
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <title><?php echo htmlspecialchars($product['name']); ?> - Detalles del Producto</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-Poppins">
     <?php include '../includes/header.php'; ?>
     <div class="container mx-auto px-4 py-8">
         <main>

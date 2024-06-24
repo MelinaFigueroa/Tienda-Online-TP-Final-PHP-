@@ -1,6 +1,6 @@
 <!-- footer.php -->
 
-<footer class="bg-gray text-white py-6">
+<footer id="footer" class="bg-gray text-white py-6">
     <div class="container mx-auto text-center">
         <div class="social-icons mt-4">
             <a href="#" class="inline-block mx-2">

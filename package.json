@@ -1,0 +1,24 @@
+{
+  "name": "tp-final-php",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000T\u0000i\u0000e\u0000n\u0000d\u0000a\u0000-\u0000O\u0000n\u0000l\u0000i\u0000n\u0000e\u0000-\u0000T\u0000P\u0000-\u0000F\u0000i\u0000n\u0000a\u0000l\u0000-\u0000P\u0000H\u0000P\u0000-\u0000\r\u0000 \u0000# Tienda-Online-TP-Final-PHP-",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build-css": "tailwindcss -i ./assets/styles.css -o ./public/styles.css --watch",
+  "build": "npm install && npm run build-css" 
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelinaFigueroa/Tienda-Online-TP-Final-PHP-.git"
+  },
+  "author": "Melina Figueroa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelinaFigueroa/Tienda-Online-TP-Final-PHP-/issues"
+  },
+  "homepage": "https://github.com/MelinaFigueroa/Tienda-Online-TP-Final-PHP-#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
