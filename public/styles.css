@@ -17,6 +17,10 @@ body {
   background: linear-gradient(0deg, rgba(230,170,109,1) 0%, rgba(100,171,232,1) 100%);
 }
 
+.container-categories{
+  color: var(--color-white);
+}
+
 /* Tamaños de fuente */
 
 h1, .text-2xl {
@@ -36,7 +40,6 @@ h3, .text-lg {
 
 .card-body h5{
   font-size: 1.2rem;
-  color: var(--color-gray);
 }
 
 .btn  .btn-primary{
@@ -57,12 +60,11 @@ small, .text-sm {
 
 body {
   margin: 0;
-  background-color: var(--color-white);
 }
 
 header {
-  background: linear-gradient(0deg, rgb(100, 171, 232, 1) 0%, rgba(41, 58, 156, 0.681) 100%);
   color: var(--color-white);
+  background-color: var(--color-gray);
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -80,10 +82,22 @@ header h1, header p {
   margin: 0;
 }
 
+.nav-icons img{
+  width: 24px;
+  /* Ajusta el tamaño de los íconos aquí */
+  height: auto;
+}
+
+.nav-icons a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
 /* Dropdown */
 
 .dropdown:hover .dropdown-content {
   display: block;
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -109,7 +123,7 @@ header h1, header p {
 /* Otros estilos */
 
 footer {
-  background: var(--color-gray);
+  background-color: var(--color-gray);
   color: var(--color-white);
   text-align: center;
   padding: 20px 0;
@@ -278,4 +292,19 @@ section h2, section h3, section h4 {
 
 .visually-hidden{
   background-color: black;
+}
+
+.categories{
+  background-color: rgba(245, 222, 179, 0.803);
+  border: 3px solid rgb(229, 229, 229);
+  color: var(--color-gray);
+}
+
+.text-color h1{
+  color: var(--color-white);
+}
+
+.text-color h1, p{
+  color: var(--color-primary);
+  font-size: 1.1rem;
 }

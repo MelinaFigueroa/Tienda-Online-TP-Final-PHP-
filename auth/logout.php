@@ -3,7 +3,7 @@ session_start();
 if (isset($_POST['confirm_logout'])) {
     session_destroy();
     $success = "Sesión cerrada exitosamente.";
-    header('Refresh: 2; URL=login.php');
+    header('Refresh: 2; URL=../pages/welcome.php');
 } elseif (isset($_POST['cancel_logout'])) {
     header('Location: ../pages/home.php');
 }

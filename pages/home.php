@@ -44,8 +44,8 @@ $products = $stmt->fetchAll();
                                             <div class="card-body">
                                                 <h5 class="card-title">No te pierdas estas ofertas!</h5>
                                                 <img src="../assets/carrousel/carrusel-ofertas.png" class="d-block w-100 card-slider" alt="<?php echo htmlspecialchars($producto['name']); ?>">
-                                                <p class="card-text">Visita la seccion de ofertas y disfruta de excelentes prendas a precios INCREIBLES!.</p>
-                                                <a href="#categoria4" class="btn btn-primary">Ver Ofertas</a>
+                                                <p class="card-text">Visita la sección de ofertas y disfruta de excelentes prendas a precios increíbles.</p>
+                                                <a href="../pages/categories.php?category_name=Outlet/Ofertas" class="btn btn-primary">Ver Ofertas</a>
                                             </div>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@ $products = $stmt->fetchAll();
                                     <div class="card">
                                         <div class="card-body">
                                             <h5 class="card-title">Carga Productos de manera facil y sencilla</h5>
-                                            <img src="../assets/carrousel/carrusel-cargar-productos.png" alt="Cargar productos">
+                                            <img src="../assets/carrousel/carrusel-cargar-productos.png" class="d-block w-100 card-slider" alt="Cargar productos">
                                             <p class="card-text">Accede al panel de administración para agregar nuevos productos a tu tienda.</p>
                                             <a href="../admin/create.php" class="btn btn-primary">Ir al Panel Admin</a>
                                         </div>
@@ -74,9 +74,9 @@ $products = $stmt->fetchAll();
                                     <div class="card">
                                         <div class="card-body">
                                             <h5 class="card-title">Suscripción a Boletín</h5>
-                                            <img src="../assets/carrousel/carrusel-contacto.png" alt="Contactanos">
+                                            <img src="../assets/carrousel/carrusel-contacto.png" class="d-block w-100 card-slider" alt="Contactanos">
                                             <p class="card-text">Suscríbete a nuestro boletín para recibir las últimas ofertas y novedades.</p>
-                                            <a href="../pages/contact.php" class="btn btn-primary">Contactanos</a>
+                                            <a href="../pages/contact.php" class="btn btn-primary">Contáctanos</a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,6 +144,9 @@ $products = $stmt->fetchAll();
     </div>
     <?php include '../includes/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

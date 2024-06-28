@@ -1,3 +1,4 @@
+<!-- Ver órdenes del usuario -->
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
@@ -7,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 require '../includes/config.php';
 
 if (!isset($_GET['product_id'])) {
-    header('Location: pages/home.php');
+    header('Location: ./home.php');
     exit;
 }
 
@@ -19,21 +20,23 @@ $stmt->execute([$product_id]);
 $product = $stmt->fetch();
 
 if (!$product) {
-    header('Location: pages/index.php');
+    header('Location: ./home.php');
     exit;
 }
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-    <title><?php echo htmlspecialchars($product['name']); ?> - Detalles del Producto</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>PinguiShop - Detalle del producto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
-<body class="bg-gray-100 font-Poppins">
+
+<body class="bg-light font-Poppins">
     <?php include '../includes/header.php'; ?>
     <div class="container mx-auto px-4 py-8">
         <main>
