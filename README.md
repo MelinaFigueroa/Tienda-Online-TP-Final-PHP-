@@ -64,4 +64,4 @@ Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archiv
 ## Contacto
 
 - Nombre: Melina Figueroa
-- LinkedIn: [Melina en LinkedIn](https://www.linkedin.com/in/melinagfigueroa)
+- [LinkedIn](https://www.linkedin.com/in/melinagfigueroa)
