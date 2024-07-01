@@ -48,15 +48,6 @@ El proyecto consiste en una tienda online básica desarrollada en PHP, HTML y CS
 3. Configura la conexión a la base de datos en `config/database.php`.
 4. Abre el proyecto en tu servidor local.
 
-## Contribución
-
-- Si deseas contribuir, sigue estos pasos:
-  1. Haz un fork del proyecto.
-  2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-  3. Realiza tus cambios y haz commits (`git commit -am 'Añade nueva funcionalidad'`).
-  4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
-  5. Crea un nuevo Pull Request.
-
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
@@ -64,4 +55,4 @@ Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archiv
 ## Contacto
 
 - Nombre: Melina Figueroa
-- LinkedIn: [Melina en LinkedIn](https://www.linkedin.com/in/melinagfigueroa)
+- [LinkedIn](https://www.linkedin.com/in/melinagfigueroa)
