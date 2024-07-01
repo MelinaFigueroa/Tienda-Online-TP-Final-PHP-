@@ -51,19 +51,19 @@ foreach ($categories as $category) {
             <div class="icon-text">
                 <a href="../pages/my-orders.php" class="text-white hover:text-gray-200 flex flex-col items-center">
                     Carrito de compras
-                    <img src="../assets/icons/carrito.png" alt="Carrito de compras" class="w-6 h-6 mt-1"> <!-- Ruta al ícono del carrito -->
+                    <img src="../assets/icons/carrito.png" alt="Carrito de compras"> <!-- Ruta al ícono del carrito -->
                 </a>
             </div>
             <div class="icon-text">
                 <a href="../admin/index.php" class="text-white hover:text-gray-200 flex flex-col items-center">
                     Panel de Administración
-                    <img src="../assets/icons/upload.png" alt="Cargar/Modificar/Eliminar productos" class="w-6 h-6 mt-1"> <!-- Ruta al ícono del panel de administración -->
+                    <img src="../assets/icons/upload.png" alt="Cargar/Modificar/Eliminar productos"> <!-- Ruta al ícono del panel de administración -->
                 </a>
             </div>
             <div class="icon-text">
                 <a href="../auth/logout.php" class="text-white hover:text-gray-200 flex flex-col items-center">
                     Cerrar Sesión
-                    <img src="../assets/icons/cerrar-sesion.png" alt="Cerrar Sesión" class="w-6 h-6 mt-1"> <!-- Ruta al ícono de cerrar sesión -->
+                    <img src="../assets/icons/cerrar-sesion.png" alt="Cerrar Sesión" > <!-- Ruta al ícono de cerrar sesión -->
                 </a>
             </div>
 
