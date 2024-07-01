@@ -23,8 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt = $pdo->prepare($sql);
         if ($stmt->execute([$username, $password_hashed])) {
             $success = "Usuario registrado con éxito. Redirigiendo... Inicio de PinguiShop en 3 segundos...";
-            header('Refresh: 2; URL=../pages/home.php');
-            exit; 
+            echo "<meta http-equiv='refresh' content='3;url=../pages/home.php'>";
+            exit;
         } else {
             $error = "Error al registrar el usuario.";
         }
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <button type="submit" class="btn btn-primary w-100">Registrarse</button>
             </form>
             <p class="mt-4 text-center">
-                ¿Ya tienes una cuenta? <a href="login.php" class="text-primary">Inicia sesión aquí</a>
+                ¿Ya tenes una cuenta? <a href="login.php" class="text-primary">Inicia sesión aquí</a>
             </p>
         </div>
     </div>

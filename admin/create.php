@@ -57,19 +57,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <title>Crear Producto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Crear Producto - PinguiShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
-<body class="bg-gray-100 font-Poppins">
+
+<body class="bg-light font-Poppins">
     <?php include '../includes/header.php'; ?>
     <div class="container mt-5">
         <div class="card mx-auto" style="max-width: 500px;">
             <div class="card-header bg-white">
-                <h1 class="text-2xl font-bold mb-4">Agregar Producto</h1>
+                <h1 class="text-center mb-4">Agregar Producto</h1>
             </div>
             <div class="card-body">
                 <?php if (!empty($error_message)) : ?>
@@ -77,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <?php echo $error_message; ?>
                     </div>
                 <?php endif; ?>
-                <form method="POST" action="create.php" enctype="multipart/form-data">
+                <form method="POST" action="create.php" enctype="multipart/form-data" id="createForm">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre:</label>
                         <input type="text" id="name" name="name" required class="form-control" placeholder="Nombre del producto">
@@ -99,17 +103,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <select id="category" name="category" class="form-control" required>
                             <option value="" selected disabled>Selecciona una categoría</option>
                             <?php foreach ($categories as $category) : ?>
-                                <option value="<?php echo $category['id']; ?>"><?php echo $category['name']; ?></option>
+                                <option value="<?php echo htmlspecialchars($category['id']); ?>"><?php echo htmlspecialchars($category['name']); ?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Crear Producto</button>
+                    <button type="submit" class="btn btn-primary w-100">Crear Producto</button>
                 </form>
-                <a href="../pages/home.php" class="btn btn-link mt-2">Volver</a>
+                <a href="index.php" class="btn btn-link mt-3">Volver</a>
             </div>
         </div>
     </div>
     <?php include '../includes/footer.php'; ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('image').addEventListener('change', function() {
+            const imageInput = this;
+            const imagePath = imageInput.value;
+            const allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+            if (!allowedExtensions.exec(imagePath)) {
+                alert('Solo se permiten archivos JPG, JPEG, PNG y GIF.');
+                imageInput.value = '';
+            }
+        });
+    </script>
 </body>
+
 </html>

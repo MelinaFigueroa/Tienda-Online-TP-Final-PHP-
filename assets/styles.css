@@ -15,6 +15,10 @@ body {
     background: linear-gradient(0deg, rgba(230,170,109,1) 0%, rgba(100,171,232,1) 100%);  
 }
 
+.container-categories{
+    color: var(--color-white);
+}
+
 /* Tamaños de fuente */
 h1, .text-2xl {
     font-size: 2.5rem; /* Tamaño para títulos principales */
@@ -51,51 +55,66 @@ body {
     background-color: var(--color-white);
 }
 
-header {
-    background: linear-gradient(0deg, rgb(100, 171, 232, 1) 0%, rgba(41, 58, 156, 0.681) 100%);
+/* Header */
+#header {
+    background-color: var(--color-gray);
     color: var(--color-white);
-    padding: 10px 20px;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-shadow: #0056b3;
 }
 
-header img {
+#header img.logo {
     max-width: 120px;
     height: auto;
     margin-right: 10px;
 }
 
-header h1, header p {
+.header-text h1 {
+    font-size: 2rem;
     margin: 0;
 }
 
-/* Dropdown */
-.dropdown:hover .dropdown-content {
-    display: block;
+.header-text p {
+    margin: 0;
+    font-size: 1.2rem;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
+/* Nav Icons */
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons .icon-text {
+    text-align: center;
+}
+
+.nav-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-icons img {
+    margin-top: 4px;
+}
+
+/* Estilos del dropdown */
+.dropdown-menu {
     background-color: var(--color-white);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
     color: var(--color-gray);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
+.dropdown-menu a {
+    color: var(--color-gray);
 }
 
+.dropdown-menu a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
 /* Otros estilos */
 footer {
     background: var(--color-gray);  
@@ -260,3 +279,38 @@ section h2, section h3, section h4 {
 .visually-hidden{
     background-color: black;
 }
+
+/* Personalización de tablas */
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(230, 170, 109, 0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(100, 171, 232, 0.1);
+}
+
+/* Estilos para imágenes */
+.img-thumbnail {
+    border-radius: 0.5rem;
+}
+
+/* Estilos para la tarjeta */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para inputs */
+.form-control:focus {
+    border-color: #FC972F;
+    box-shadow: 0 0 5px rgba(252, 151, 47, 0.5);
+}
+
+/* Estilos para alertas */
+.alert-danger {
+    background-color: rgba(252, 151, 47, 0.1);
+    border-color: rgba(252, 151, 47, 0.3);
+    color: #FC972F;
+}
+
