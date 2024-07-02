@@ -41,6 +41,7 @@ $products = $stmt->fetchAll();
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,12 +50,13 @@ $products = $stmt->fetchAll();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
+
 <body class="bg-light font-Poppins">
     <?php include '../includes/header.php'; ?>
     <div class="container mt-5 container-categories">
         <h1 class="text-center"><?php echo htmlspecialchars($selected_category['name']); ?></h1>
         <div class="row">
-            <?php foreach ($products as $product): ?>
+            <?php foreach ($products as $product) : ?>
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="../uploads/<?php echo htmlspecialchars($product['image_url']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($product['name']); ?>">
@@ -72,4 +74,5 @@ $products = $stmt->fetchAll();
     <?php include '../includes/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>

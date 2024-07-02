@@ -38,7 +38,7 @@ foreach ($categories as $category) {
                         Categorías
                     </a>
                     <ul class="dropdown-menu">
-                        <?php foreach ($categories as $category): ?>
+                        <?php foreach ($categories as $category) : ?>
                             <li><a class="dropdown-item" href="../pages/categories.php?category_name=<?= $category['name'] ?>"><?= $category['name'] ?></a></li>
                         <?php endforeach; ?>
                     </ul>
@@ -51,19 +51,19 @@ foreach ($categories as $category) {
             <div class="icon-text">
                 <a href="../pages/my-orders.php" class="text-white hover:text-gray-200 flex flex-col items-center">
                     Carrito de compras
-                    <img src="../assets/icons/carrito.png" alt="Carrito de compras"> <!-- Ruta al ícono del carrito -->
+                    <img src="../assets/icons/carrito.png" alt="Carrito de compras">
                 </a>
             </div>
             <div class="icon-text">
                 <a href="../admin/index.php" class="text-white hover:text-gray-200 flex flex-col items-center">
                     Panel de Administración
-                    <img src="../assets/icons/upload.png" alt="Cargar/Modificar/Eliminar productos"> <!-- Ruta al ícono del panel de administración -->
+                    <img src="../assets/icons/upload.png" alt="Cargar/Modificar/Eliminar productos">
                 </a>
             </div>
             <div class="icon-text">
                 <a href="../auth/logout.php" class="text-white hover:text-gray-200 flex flex-col items-center">
                     Cerrar Sesión
-                    <img src="../assets/icons/cerrar-sesion.png" alt="Cerrar Sesión" > <!-- Ruta al ícono de cerrar sesión -->
+                    <img src="../assets/icons/cerrar-sesion.png" alt="Cerrar Sesión">
                 </a>
             </div>
 

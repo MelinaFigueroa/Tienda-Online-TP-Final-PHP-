@@ -28,7 +28,7 @@ $products = $stmt->fetchAll();
     <div class="container py-8">
         <h1 class="text-dark mb-4">Panel de Administración</h1>
         <a href="create.php" class="btn btn-primary mb-4">Crear Nuevo Producto</a>
-        
+
         <h2 class="mb-2">Listado de Productos</h2>
         <table class="table table-striped table-hover shadow-sm rounded">
             <thead class="table-dark">
@@ -61,4 +61,5 @@ $products = $stmt->fetchAll();
     <?php include '../includes/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>

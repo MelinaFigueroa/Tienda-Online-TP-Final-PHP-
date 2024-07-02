@@ -25,6 +25,7 @@ if (!$product) {
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +34,7 @@ if (!$product) {
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
+
 <body class="bg-gray-100 font-Poppins">
     <?php include '../includes/header.php'; ?>
     <div class="container mx-auto px-4 py-8">
@@ -57,4 +59,5 @@ if (!$product) {
     </div>
     <?php include '../includes/footer.php'; ?>
 </body>
+
 </html>

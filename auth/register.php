@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,17 +42,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
+
 <body class="bg-light font-Poppins">
     <?php include '../includes/header.php'; ?>
     <div class="container mt-5">
         <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-lg p-6">
             <h1 class="text-center mb-4">Registrarse</h1>
-            <?php if (!empty($error)): ?>
+            <?php if (!empty($error)) : ?>
                 <div class="alert alert-danger text-center" role="alert">
                     <?php echo $error; ?>
                 </div>
             <?php endif; ?>
-            <?php if (!empty($success)): ?>
+            <?php if (!empty($success)) : ?>
                 <div class="alert alert-success text-center" role="alert">
                     <?php echo $success; ?>
                 </div>
@@ -91,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         function checkPasswordStrength(password) {
             var passwordStrength = document.getElementById('passwordStrength');
             var strengthText = '';
-            
+
             if (password.length < 6) {
                 strengthText = "La contraseña debe tener al menos 6 caracteres.";
             } else if (!/[A-Za-z]/.test(password)) {
@@ -103,9 +105,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             } else {
                 strengthText = "La contraseña cumple con los requisitos.";
             }
-            
+
             passwordStrength.innerHTML = '<div class="alert alert-info" role="alert">' + strengthText + '</div>';
         }
     </script>
 </body>
+
 </html>

@@ -11,42 +11,52 @@
 /* Fuentes */
 body {
     font-family: 'Poppins', sans-serif;
-    background: rgb(230,170,109);
-    background: linear-gradient(0deg, rgba(230,170,109,1) 0%, rgba(100,171,232,1) 100%);  
+    background: rgb(230, 170, 109);
+    background: linear-gradient(0deg, rgba(230, 170, 109, 1) 0%, rgba(100, 171, 232, 1) 100%);
 }
 
-.container-categories{
+.container-categories {
     color: var(--color-white);
 }
 
 /* Tamaños de fuente */
-h1, .text-2xl {
-    font-size: 2.5rem; /* Tamaño para títulos principales */
+h1,
+.text-2xl {
+    font-size: 2.5rem;
+    /* Tamaño para títulos principales */
 }
 
-h2, .text-xl {
-    font-size: 1.875rem; /* Tamaño para subtítulos */
+h2,
+.text-xl {
+    font-size: 1.875rem;
+    /* Tamaño para subtítulos */
 }
 
-h3, .text-lg {
-    font-size: 1.5rem; /* Tamaño para encabezados */
+h3,
+.text-lg {
+    font-size: 1.5rem;
+    /* Tamaño para encabezados */
 }
 
-.card-body h5{
+.card-body h5 {
     font-size: 1.2rem;
     color: var(--color-gray);
 }
 
-.btn  .btn-primary{
-     color: var(--color-primary);
+.btn .btn-primary {
+    color: var(--color-primary);
 }
 
-p, .text-base {
-    font-size: 1rem; /* Tamaño para texto del cuerpo */
+p,
+.text-base {
+    font-size: 1rem;
+    /* Tamaño para texto del cuerpo */
 }
 
-small, .text-sm {
-    font-size: 0.875rem; /* Tamaño para texto pequeño */
+small,
+.text-sm {
+    font-size: 0.875rem;
+    /* Tamaño para texto pequeño */
 }
 
 /* Reset y configuración básica */
@@ -71,12 +81,14 @@ header img {
     margin-right: 10px;
 }
 
-header h1, header p {
+header h1,
+header p {
     margin: 0;
 }
 
-.nav-icons img{
-    width: 24px; /* Ajusta el tamaño de los íconos aquí */
+.nav-icons img {
+    width: 24px;
+    /* Ajusta el tamaño de los íconos aquí */
     height: auto;
 }
 
@@ -87,27 +99,29 @@ header h1, header p {
 
 .nav-icons .icon-text {
     text-align: center;
-    margin-right: 20px; /* Ajusta el margen derecho para separar los íconos */
+    margin-right: 20px;
+    /* Ajusta el margen derecho para separar los íconos */
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
 .nav-icons .icon-text a {
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 1rem;
 
 }
 
 .nav-icons .icon-text img {
-    margin-left: 5px; 
+    margin-left: 5px;
     width: 20px;
 }
 
 /* Dropdown */
 .dropdown:hover .dropdown-content {
     display: block;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
 
 .dropdown-content {
@@ -132,7 +146,7 @@ header h1, header p {
 
 /* Otros estilos */
 footer {
-    background: var(--color-gray);  
+    background: var(--color-gray);
     color: var(--color-white);
     text-align: center;
     padding: 20px 0;
@@ -177,7 +191,9 @@ section {
     border-radius: 5px;
 }
 
-section h2, section h3, section h4 {
+section h2,
+section h3,
+section h4 {
     margin-bottom: 10px;
 }
 
@@ -188,7 +204,8 @@ section h2, section h3, section h4 {
 }
 
 .product {
-    width: calc(30% - 20px); /* Ajusta según la cantidad de productos por fila */
+    width: calc(30% - 20px);
+    /* Ajusta según la cantidad de productos por fila */
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -269,9 +286,11 @@ section h2, section h3, section h4 {
 .form-container .btn-link:hover {
     text-decoration: underline;
 }
+
 .form-group {
     position: relative;
 }
+
 .form-group .invalid-feedback {
     position: absolute;
     bottom: -1.5em;
@@ -282,21 +301,22 @@ section h2, section h3, section h4 {
 }
 
 /* Ajustes para el contenedor del carrusel */
-.carousel
-.carousel-inner {
-    height: auto; /* Ajusta la altura para que se adapte a las tarjetas */
+.carousel .carousel-inner {
+    height: auto;
+    /* Ajusta la altura para que se adapte a las tarjetas */
 }
 
 /* Ajustes para que el carrusel se vea bien con tarjetas */
 .carousel-item {
     padding: 20px;
 }
-.visually-hidden{
+
+.visually-hidden {
     background-color: black;
 }
 
 /* Personalización de tablas */
-.table-striped > tbody > tr:nth-of-type(odd) {
+.table-striped>tbody>tr:nth-of-type(odd) {
     background-color: rgba(230, 170, 109, 0.1);
 }
 
@@ -328,4 +348,3 @@ section h2, section h3, section h4 {
     border-color: rgba(252, 151, 47, 0.3);
     color: #FC972F;
 }
-
