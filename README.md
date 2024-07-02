@@ -13,26 +13,11 @@ El proyecto consiste en una tienda online básica desarrollada en PHP, HTML y CS
   - Categorización de productos.
 
 - **Carrito de Compras:**
-  - Agregar y eliminar productos del carrito.
-  - Calcular total y subtotal.
+  - Agregar productos al carrito.
+
 
 - **Autenticación:**
   - Registro y login de usuarios.
-  - Perfiles de usuario con histórico de compras.
-
-- **Seguridad:**
-  - Implementación de medidas básicas de seguridad (evitar SQL Injection y XSS).
-
-- **Responsive Design:**
-  - Diseño adaptable para diferentes dispositivos.
-
-## Capturas de Pantalla
-
-![Captura de pantalla 1](screenshots/screenshot1.png)
-*Descripción de la captura de pantalla 1.*
-
-![Captura de pantalla 2](screenshots/screenshot2.png)
-*Descripción de la captura de pantalla 2.*
 
 ## Tecnologías Utilizadas
 
